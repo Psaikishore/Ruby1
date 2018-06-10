@@ -1,0 +1,13 @@
+CONTROLLER : used for to look at url and decide what to do. resp for taking to model and view
+MODEL : resp for database , api used
+VIEW : user view
+
+1. changed config/route.rb to get a index view of posts instead of welcome
+2. we can send data from the controller by editing the function in contreller as
+
+                def about
+                  @title = 'About us'
+                end
+and doing the below in /view/pages/about.html.erb
+
+            <h1><%= @title %></h1>
